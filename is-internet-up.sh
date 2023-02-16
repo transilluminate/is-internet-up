@@ -18,7 +18,7 @@ SUCCESS_URL="http://detectportal.firefox.com/success.txt"
 serverResponse=$(wget -q $SUCCESS_URL --timeout=10 -O - 2> /dev/null)
 
 if [[ $serverResponse == "success" ]]; then
-  echo "true"; exit 0
+  echo "true"
 else
-  echo "false"; exit 1
+  echo "false"
 fi
