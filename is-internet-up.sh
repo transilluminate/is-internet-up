@@ -3,6 +3,8 @@
 # email: $ echo YWRyaWFuIGRvdCBqIGRvdCByb2JpbnNvbiBhdCBnbWFpbCBkb3QgY29tCg== | base64 --decode
 # https://github.com/transilluminate/is-internet-up
 
+SUCCESS_URL="http://detectportal.firefox.com/success.txt"
+
 # From https://github.com/pia-foss/manual-connections
 check_tool() {
   command=$1
@@ -12,8 +14,6 @@ check_tool() {
   fi
 }
 check_tool wget
-
-SUCCESS_URL="http://detectportal.firefox.com/success.txt"
 
 serverResponse=$(wget -q $SUCCESS_URL --timeout=10 -O - 2> /dev/null)
 
