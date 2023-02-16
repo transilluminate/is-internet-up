@@ -1,5 +1,6 @@
 #!/bin/bash
-# Copyright 2023 Adrian Robinson <adrian dot j dot robinson at gmail dot com>
+# Copyright 2023 Adrian Robinson
+# email: $ echo YWRyaWFuIGRvdCBqIGRvdCByb2JpbnNvbiBhdCBnbWFpbCBkb3QgY29tCg== | base64 --decode
 # https://github.com/transilluminate/is-internet-up
 
 # From https://github.com/pia-foss/manual-connections
